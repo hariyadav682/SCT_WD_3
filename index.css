@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212; /* Darker background for modern look */
+  font-family: 'Arial', sans-serif;
+  color: #e0e0e0; /* Light gray text for readability */
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #ffa726; /* Accent color for headings */
+}
+
+#status {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  background-color: #1e1e1e; /* Neutral dark cell background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: background 0.3s ease, transform 0.2s;
+  cursor: pointer;
+  color: #ff6f61; /* Accent color for cell content */
+}
+
+.cell:hover {
+  background-color: #333333; /* Slightly lighter hover state */
+  transform: scale(1.05);
+}
+
+.cell:active {
+  transform: scale(1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6f61; /* Bright button color */
+  color: #121212; /* Dark text for contrast */
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #ff8a80; /* Lighter hover color */
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#status.winner {
+  color: #80d8ff; /* Highlight for winners */
+}
+
+.mode-selection {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #e0e0e0; /* Consistent light text */
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #424242; /* Subtle border */
+  border-radius: 5px;
+}
+
+.settings {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #e0e0e0;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+}
